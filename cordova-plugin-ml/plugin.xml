@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-moduscreate-plugins-coldovapluginml" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>ColdovaPluginsMl</name>
+  <js-module name="ColdovaPluginsMl" src="www/ColdovaPluginsMl.js">
+    <clobbers target="coldovapluginml" />
+  </js-module>
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="ColdovaPluginsMlSwift">
+        <param name="ios-package" value="ColdovaPluginsMlSwift" />
+      </feature>
+    </config-file>
+    <source-file src="src/ios/ColdovaPluginsMl.swift" />
+  </platform>
+</plugin>
